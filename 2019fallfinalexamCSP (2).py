@@ -77,20 +77,12 @@ def Click_p():
     pen_size -= 1
     drawer.pensize(pen_size)
 
-#Pen up or down functions
+#Pen up or down function
 def Click_u():
-   # drawer.up()
-
-#this part is me trying to figure out how to 
-#do the isdown thing, but I don't know how to word it :)
     if drawer.isdown() is True:
         drawer.up()
     elif drawer.isdown()is False:
         drawer.down()
-
-#pen down
-#def Click_d():
-    #drawer.down()
 
 #color/drawing functions
 
