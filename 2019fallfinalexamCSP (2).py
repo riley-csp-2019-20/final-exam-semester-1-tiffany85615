@@ -79,15 +79,18 @@ def Click_p():
 
 #Pen up or down functions
 def Click_u():
-    drawer.up()
-    '''if drawer.isdown is True:
-        drawer.up()
-    elif drawer.isdown is False:
-      drawer.down()'''
+   # drawer.up()
 
-    
-def Click_d():
-    drawer.down()
+#this part is me trying to figure out how to 
+#do the isdown thing, but I don't know how to word it :)
+    if drawer.isdown() is True:
+        drawer.up()
+    elif drawer.isdown()is False:
+        drawer.down()
+
+#pen down
+#def Click_d():
+    #drawer.down()
 
 #color/drawing functions
 
@@ -123,7 +126,7 @@ wn.onkeypress(Color_red, "r")
 wn.onkeypress(Color_green, "g")
 wn.onkeypress(Color_blue, "b")
 wn.onkeypress(Color_violet, "v")
-wn.onkeypress(Click_d, "d")
+#wn.onkeypress(Click_d, "d")
 
 #listen
 wn.listen()
